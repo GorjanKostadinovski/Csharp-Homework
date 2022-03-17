@@ -10,8 +10,8 @@ namespace Csharp_Homework_1
             var operators = Console.ReadLine();
             var numTwo = Console.ReadLine();
             string operatorCase = operators;
-            int numOneInt = int.Parse(numOne);
-            int numTwoInt = int.Parse(numTwo);
+            int.TryParse(numOne,out int numOneInt);
+            int.TryParse(numTwo,out int numTwoInt);
             
 
             switch (operatorCase) {
